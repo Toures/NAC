@@ -26,6 +26,9 @@ int main() {
 	Vektor2D u(1,2);
 	u.kopiereIn(w);
 	u.kopiereIn(&a);
-	w->ausgabe();
-	a.ausgabe();
+	std::cout << "Betrag w: "; w->ausgabe(); std::cout << std::endl;
+	std::cout << "Betrag a: "; a.ausgabe(); std::cout << std::endl;
+//	tausche(z, &a);
+//	std::cout << "Betrag a: "; a.ausgabe(); std::cout << std::endl;
+//	std::cout << "Betrag z: "; z->ausgabe(); std::cout << std::endl;
 }

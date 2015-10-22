@@ -21,6 +21,17 @@ void Vektor2D::kopiereIn(Vektor2D* zielvar) {
 	zielvar->m_Element[1] = m_Element[1];
 }
 
+void Vektor2D::ausgabe() {
+	std::cout << "Vektor2D: "; ausgabe();
+}
+
 Vektor2D::~Vektor2D(void)
 {
 }
+
+//void tausche(Vektor2D* a, Vektor2D* b) {
+//	Vektor2D* temp;
+//	a->kopiereIn(temp);
+//	b->kopiereIn(a);
+//	temp->kopiereIn(b);
+//}

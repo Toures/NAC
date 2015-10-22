@@ -8,8 +8,8 @@ class Matrix{
 		float m_Element [2];
 	public:
 		Matrix();
-		void ausgabe();
-		~Matrix();
+		virtual void ausgabe();
+		virtual ~Matrix();
 };
 
 #endif /*_MATRIX_HEADER_*/

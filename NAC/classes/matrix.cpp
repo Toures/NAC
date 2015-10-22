@@ -5,7 +5,6 @@ using namespace std;
 Matrix::Matrix()
 	:m_Zeilen(2),
 	m_Spalten(1) {
-	cout << "Standardkonstruktor von Matrix wurde aufgerufen" << endl;
 }
 
 void Matrix::ausgabe() {
@@ -18,7 +17,4 @@ void Matrix::ausgabe() {
 }
 
 Matrix::~Matrix() {
-	cout << "Matrix ";
-	ausgabe();
-	cout << "wird zerstört." << endl;
 }
