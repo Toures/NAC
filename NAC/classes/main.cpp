@@ -22,4 +22,10 @@ int main() {
 	std::cout << "Betrag w: "; w->ausgabe(); std::cout << std::endl;
 	w->addiere(b);
 	std::cout << "Betrag w: "; w->ausgabe(); std::cout << std::endl;
+
+	Vektor2D u(1,2);
+	u.kopiereIn(w);
+	u.kopiereIn(&a);
+	w->ausgabe();
+	a.ausgabe();
 }
