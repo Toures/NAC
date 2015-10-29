@@ -22,7 +22,7 @@ void Vektor2D::kopiereIn(Vektor2D* zielvar) {
 }
 
 void Vektor2D::ausgabe() {
-	std::cout << "Vektor2D: "; ausgabe();
+	std::cout << "Vektor2D: "; Matrix::ausgabe(); std::cout << std::endl;
 }
 
 Vektor2D::~Vektor2D(void)

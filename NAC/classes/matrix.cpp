@@ -2,9 +2,16 @@
 #include <iostream>
 using namespace std;
 
+int Matrix::counter = 0;
+
 Matrix::Matrix()
 	:m_Zeilen(2),
-	m_Spalten(1) {
+	m_Spalten(1){
+	Matrix::counter++;
+}
+
+int Matrix::getCounter() {
+	return Matrix::counter;
 }
 
 void Matrix::ausgabe() {
@@ -17,4 +24,5 @@ void Matrix::ausgabe() {
 }
 
 Matrix::~Matrix() {
+	Matrix::counter--;
 }

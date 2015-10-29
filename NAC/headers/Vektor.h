@@ -7,7 +7,9 @@ class Vektor :
 {
 public:
 	Vektor(void);
-	int betrag();
+	float betrag();
+	float skalarprodukt(Vektor*);
+	float winkel(Vektor*);
 	virtual ~Vektor(void);
 };
 
